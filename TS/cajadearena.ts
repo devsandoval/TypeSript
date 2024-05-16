@@ -34,12 +34,7 @@ type Direccion = {
     pais: string
 }
 
-enum Talla {
-    S = "S",
-    M = "M",
-    L = "L",
-    XL = "XL"
-}
+enum Talla {Chica = "S", Mediana = "M", Grande = "L", ExtraGrande = "XL"}
 
 type Persona = {
     id: number,
@@ -51,12 +46,25 @@ type Persona = {
 let persona: Persona = {
     id: 1,
     nombre: "Juan",
-    talla: Talla.L,
+    talla: Talla.Grande,
     direccion: {
         numero: 123,
         calle: "Calle Principal",
         pais: "México"
     }
+}
+
+let persona2: Persona = {
+    id: 2,
+    nombre: "Cesar",
+    talla: Talla.Mediana,
+    direccion: {
+        numero: 21,
+        calle: "General Jofre",
+        pais: "Chile"
+    }
 };
 
+
 console.log(persona); // Esto imprimirá el objeto completo
+console.log(persona2); // Esto imprimirá el objeto completo
