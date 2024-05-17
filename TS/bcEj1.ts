@@ -25,7 +25,7 @@ let mensaje: string = "Yo tenia " + cantidad + " "+ mascota;
 // ejercicio 3
 /*Conversor de divisas
 El dolar hoy esta a 787.65 pesos
-Quiere convertir 10000 pesos
+Quiere convertir 10000 peso
 Le corresponden: 12.695994413762458 dolares  resultado*/
 let dolar: number = 787.65;
 let pesos: number = 10000;
