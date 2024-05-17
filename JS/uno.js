@@ -1,0 +1,11 @@
+"use strict";
+let tangananica = 30;
+let tanganana = 30;
+let totalVotos;
+let porcentajenica;
+let porcentajenana;
+totalVotos = (tangananica + tanganana);
+porcentajenana = (tanganana / tangananica) * 100;
+porcentajenica = (tangananica / tanganana) * 100;
+console.log(porcentajenana);
+console.log(porcentajenica);
