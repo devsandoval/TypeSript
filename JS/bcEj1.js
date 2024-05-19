@@ -8,7 +8,7 @@ let Control1 = 5.5;
 let Control2 = 4.1;
 let Control3 = 6.4;
 let total = (Control1 + Control2 + Control3);
-let Promedio = (Control1 + Control2 + Control3) / 3;
+let Promedio = (Control1 + Control2 + Control3) / total;
 console.log(`El promedio es ${Promedio}`);
 let mascota = 'perritos';
 let cantidad = 10;
