@@ -19,20 +19,23 @@ console.log(`El resultado de A-B es: ${A % B}`)
 /*2.
 Cree un programa que tome un número de 2 dígitos e invierta sus dígitos. Por ejemplo:
  */
-const numeroConstante: number = 45;
+const numeroConstante: number = 89;
 const primerDigito: number = numeroConstante % 10; // Obtener el segundo dígito
 const segundoDigito: number = (numeroConstante - primerDigito) / 10; // Obtener el primer dígito
-console.log(`El número ${numeroConstante} invertido es ${primerDigito}${segundoDigito}`)
+const numeroInvertido: number = ((primerDigito * 10) + (segundoDigito))
+console.log(`El número ${numeroConstante} invertido es ${numeroInvertido}`)
 
 /*3.
 En base a lo visto en la pregunta anterior, adapte su programa para que invierta un número de 3 dígitos:
  */
-const numeroConstante_2: number = 892;
+const numeroConstante_2: number = 754;
 const unidad: number = numeroConstante_2 % 10 // Obtener el primer dígito de izquierda a derecha
 const restoUnidad: number = numeroConstante_2 % 100 // Encuentra el resto del total
 const centena: number = (numeroConstante_2 - restoUnidad) / 100 // Obtener el segundo dígito de izquierda a derecha
-const decena: number = ((numeroConstante_2 % 100) - (numeroConstante_2 % 10)) / 10 // Obtener el primer dígito de izquierda a derecha
-console.log(`El numero ${numeroConstante_2} invertido es ${unidad}${decena}${centena}`)
+const decena: number = ((numeroConstante_2 % 100) - (numeroConstante_2 % 10)) / 10// Obtener el primer dígito de izquierda a derecha
+const numeroInvertido2: number = ((unidad * 100) + (decena * 10) + (centena))
+
+console.log(`El numero ${numeroConstante_2} invertido es ${numeroInvertido2}`)
 
 /*4
 un amigo biólogo le comenta que una población de bacterias puede ser modelada por la siguiente fórmula matemática:
@@ -44,7 +47,7 @@ luego de un tiempo determinado, siguiendo el diálogo:
 const poblacacionInicial: number = 15
 const minutos: number = 3
 const num: number = 20
-const poblacionFinal = poblacacionInicial * (5 ** minutos) + num
+const poblacionFinal: number = poblacacionInicial * (5 ** minutos) + num
 console.log(poblacionFinal)
 
 /*5
@@ -56,10 +59,10 @@ const a: number = 2
 const exprecion1: number = (((4 + 5) * a - 20 / 50) ** a / 5)
 console.log(exprecion1)
 
-const exprecion2: number = (45+(10**5)-55)/((30*8)-a)-(a**(5/4))
+const exprecion2: number = (45 + (10 ** 5) - 55) / ((30 * 8) - a) - (a ** (5 / 4))
 console.log(exprecion2)
 
-let op1: number = ((1.5-35))**a
-let op2: number = (a**3/15)
-const exprecion3: number = op1+op2
+let op1: number = ((1.5 - 35)) ** a
+let op2: number = (a ** 3 / 15)
+const exprecion3: number = op1 + op2
 console.log(exprecion3)
