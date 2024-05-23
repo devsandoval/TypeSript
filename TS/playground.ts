@@ -1,10 +1,7 @@
 //¡//////////////////////////////////////
-//!  CORREXION DE ERRORES Y PRUEBAS   !//
+//!  CORRECCION DE ERRORES Y PRUEBAS   !//
 //¡//////////////////////////////////////
 
 
 
 
-export function greet(): string {
-    return "hello world!";
-}
