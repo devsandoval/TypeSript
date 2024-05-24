@@ -72,7 +72,7 @@ switch (jugada) {
         console.log("jugada invalida")
 }
 if (ganador == "empate") {
-    console.log(`El jugador eligio ${jugada} y el resultado es empate`)
+    console.log(`El jugador eligio ${jugada} y el resultado es ${ganador}`)
 } else {
     console.log(`El jugador eligio ${jugada} y el ganador es ${ganador}`)
 }

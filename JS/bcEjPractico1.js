@@ -61,15 +61,15 @@ switch (jugada) {
         console.log("jugada invalida");
 }
 if (ganador == "empate") {
-    console.log(`El jugador eligio ${jugada} y el resultado es empate`);
+    console.log(`El jugador eligio ${jugada} y el resultado es ${ganador}`);
 }
 else {
     console.log(`El jugador eligio ${jugada} y el ganador es ${ganador}`);
 }
-let numero_a = 12;
-let numero_b = 9;
-let numero_c = 14;
-if ((numero_a < (numero_b + numero_c)) || (numero_b < (numero_a + numero_c)) || (numero_c < (numero_a + numero_b))) {
+let numero_a = 3;
+let numero_b = 3;
+let numero_c = 1;
+if ((numero_a < (numero_b + numero_c)) && (numero_b < (numero_a + numero_c)) && (numero_c < (numero_a + numero_b))) {
     if ((numero_a == numero_b) && (numero_a == numero_c) && (numero_b == numero_c)) {
         console.log("Es un triangulo Equilátero");
     }
