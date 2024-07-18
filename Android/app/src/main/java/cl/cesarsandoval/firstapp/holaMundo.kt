@@ -1,2 +1,0 @@
-package cl.cesarsandoval.firstapp
-
